@@ -1,8 +1,8 @@
-[
+
 {
     "idTribu" : 1,
-    "tribu" : "Tribu 1",
-    "puntos" : 1000000,
+    "tribu" : "CloverLeaf",
+    "puntos" : 10000,
     "campers" : [
         {
         "id" : 1,
@@ -23,4 +23,4 @@
         }
     ]
 }
-]
+

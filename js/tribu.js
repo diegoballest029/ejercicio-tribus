@@ -1,22 +1,23 @@
-const URL_API ="data/datos.json";
-function loadData(){
-    fetch(URL_API)
-    .then((Response) =>{
-        return Response.json();
-    })
-    .then((data) => {
-        viewHTML(data);
-    })
-}
-function viewHTML(myData){
-    const divContenedor = document.querySelector('#contenedor');
-    const {idTribu, tribu, puntos} = myData;
-    divContenedor.innerHTML= /* HTML*/`
-    <p>idTribu:${idTribu}</p>
-    <p>nombre:${tribu}</p>
-    <p>puntos:${puntos}</p>
-    `
-}
+fetch('data/datos.json')
+.then(Response => Response.json())
+.then(data => {
+   document.getElementById('datos-json').innerHTML = `
+   <p>ID ${data.idTribu}</p>
+   <p>Tribu ${data.tribu}</p>
+   <p>Puntos ${data.puntos}</p>`;
+})
+
+.catch(error => console.log(error));as
+
+
+
+
+
+
+
+
+
+
 
 
 
