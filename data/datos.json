@@ -1,5 +1,6 @@
 
-{
+ [
+    {
     "idTribu" : 1,
     "tribu" : "CloverLeaf",
     "puntos" : 10000,
@@ -11,7 +12,6 @@
         "ingles" : "A1",
         "rol": "Leader",
         "img" : ""
-
         },
         {
             "id" : 2,
@@ -22,5 +22,5 @@
             "img" : ""
         }
     ]
-}
-
+    }
+]
